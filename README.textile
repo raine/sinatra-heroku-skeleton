@@ -4,6 +4,8 @@ Includes deployment process with JavaScript minification using "Closure Compiler
 
 * @rake deploy@ takes commit/tree/branch/tag as an argument. Example: @rake deploy[9d49204]@
 * JavaScript files to be minified are specified in @Rakefile@
+* You may want to remove closure compiler from the index before deploying for smaller slug size
+@git rm --cached closure-compiler.jar && gc -m 'delete closure compiler'@
 
 h2. Example usage
 
