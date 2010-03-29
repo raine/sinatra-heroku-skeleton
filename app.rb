@@ -3,5 +3,5 @@ require 'sinatra'
 require 'config'
 
 get '/' do
-  "Hello World!"
+  erb :index
 end
