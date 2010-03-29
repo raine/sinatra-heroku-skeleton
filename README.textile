@@ -1,0 +1,18 @@
+h1. Sinatra Heroku Skeleton
+
+Includes deployment process with JavaScript minification using "Closure Compiler":http://code.google.com/closure/compiler/.
+
+* @rake deploy@ takes commit/tree/branch/tag as an argument. Example: @rake deploy[9d49204]@
+* JavaScript files to be minified are specified in @Rakefile@
+
+h2. Example usage
+
+<pre>
+  [git] $ git clone git://github.com/raneksi/sinatra-heroku-skeleton.git
+  [git] $ cd sinatra-heroku-skeleton/
+  [sinatra-heroku-skeleton master] $ heroku create
+  [sinatra-heroku-skeleton master] $ rake deploy
+  [sinatra-heroku-skeleton master] $ heroku open
+</pre>
+
+!http://img.skitch.com/20100329-d64x6kna4wk6y2p4ackue9xky2.png!
